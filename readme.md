@@ -1,23 +1,29 @@
 # Dummy Project
 
+Cookiecutter-based structure:
+
 ```
 ├── docs                    # auto-documentation (latex, html, pdf)
-│ 
+├── notebooks               # notebooks
+├── reports                 # figures, logs and main results
+│   ├── figures 
+│   ├── logs 
+│   └── results
 ├── src                     # source code
 │   ├── __init__.py         # make it a package
-│   └── main.py             # main program
+│   ├── main.py             # main program
 │   └── utils.py            # commom functionalities
 └── test
 │    ├── __init__.py        # also make test a package
 │    └── test.py            # unit tests
 │
 ├── requirements.txt        # python dependencies 
-├── README.md               # this document
+└── README.md               # this document
 ```
 
 
-# Sphinx Tutorial
-*  Install Sphinx and Rinohtype in the virtual environment of the project you’re working on use the following commands below.
+### Auto-documentation management: Sphinx Tutorial
+*  Install Sphinx and Rinohtype (if not installex)  in the virtual environment of the project you’re working on use the following commands below.
 ```
 conda activate env_name
 pip install Sphinx
@@ -82,7 +88,7 @@ Test
 .. module:: src.main
    :synopsis: define the functionality
 
-.. moduleauthor:: (C) Jose Angel Velasco - 2021
+.. moduleauthor:: (C) your name - 2021
 """
 ```
 
